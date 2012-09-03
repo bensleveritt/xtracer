@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 
-    <title>Xtracer 2 by 4rknova</title>
+    <title>XTracer 2 by 4rknova</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>Xtracer 2</h1>
+        <h1>XTracer 2</h1>
         <h2>Global Illumination renderer</h2>
 
         <section id="downloads">
@@ -33,18 +33,15 @@
 <p>Copyright 2010 - 2012 (c) 
 Papadopoulos Nikos <a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a> </p>
 
-<p><img src="https://dl-web.dropbox.com/get/Photos/xtracer/gi_2.png?w=fb319a1d" alt="Global illumination with photon mapping"><img src="https://dl-web.dropbox.com/get/Photos/xtracer/gi_1.png?w=83e5966b" alt="Global illumination with photon mapping"></p>
+<p><img src="https://dl-web.dropbox.com/get/Photos/xtracer/gi_2.png?w=fb319a1d" alt="Global illumination with photon mapping"><img src="https://dl-web.dropbox.com/get/Photos/xtracer/gi_1.png?w=83e5966b" alt="Global illumination with photon mapping"><img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/hqPfqhDyOu/stanford.png" alt="Renders of Stanford models"></p>
 
 <h2>About</h2>
 
 <p>XTracer is a raytracer written in c and c++. </p>
 
-<p>v0.7 served as my thesis project for the BSc of computer science at the University 
-of Piraeus. It was developed under the supervision of Prof. T. Panayiotopoulos as 
-part of the research work of the Knowledge Engineering Lab (KEL).</p>
+<p>v0.7 served as my thesis project for the BSc of computer science at the University of Piraeus. It was developed under the supervision of Prof. T. Panayiotopoulos as part of the research work of the Knowledge Engineering Lab (KEL).</p>
 
-<p>v1.x is currently under development as part of my dissertation for the MSc of
-computer graphics programming at the University of Hull.</p>
+<p>v1.x is currently under development as part of my dissertation for the MSc of computer graphics programming at the University of Hull.</p>
 
 <h2>License</h2>
 
@@ -52,51 +49,53 @@ computer graphics programming at the University of Hull.</p>
 
 <h2>Version history</h2>
 
-<p>0.7     2866bf99ca04d84a85ab13b755ded7d42014bee7
-1.x     HEAD</p>
+<ul>
+<li>0.7   : 2866bf99ca04d84a85ab13b755ded7d42014bee7</li>
+<li>1.x   : HEAD</li>
+</ul><h2>Features</h2>
 
-<h2>Features</h2>
-
-<p>Implemented:</p>
+<p><strong>Implemented:</strong></p>
 
 <ul>
-<li>Primitives    : Plane, Triangle, Sphere, Mesh</li>
-<li>Materials     : Lambert, Phong, Blinn-Phong</li>
-<li>Lights        : Point, Sphere, Box, Triangle</li>
-<li>Cameras       : Pinhole, Thin lense</li>
-<li>Shading       : Reflection (glossy &amp; perfect mirror), Refraction,
-              Depth of field, Soft shadows, Texture mapping</li>
-<li>Acceleration  : Threads, Octrees, KD-trees</li>
-<li>Anti-aliasing : Supersampling</li>
-<li>Rendering     : HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)</li>
-</ul><p>Future expansion:</p>
+<li>Primitives : <em>Plane, Triangle, Sphere, Mesh</em>
+</li>
+<li>Materials  : <em>Lambert, Phong, Blinn-Phong</em>
+</li>
+<li>Lights     : <em>Point, Sphere, Box, Triangle</em>
+</li>
+<li>Cameras    : <em>Pinhole, Thin lense</em>
+</li>
+<li>Shading    : <em>Reflection (glossy &amp; perfect mirror), Refraction, Depth of field, Soft shadows, Texture mapping</em>
+</li>
+<li>Acceleration  : <em>Threads, Octrees, KD-trees</em>
+</li>
+<li>Anti-aliasing : <em>Supersampling</em>
+</li>
+<li>Rendering     : <em>HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)</em>
+</li>
+</ul><p><strong>Future expansion:</strong></p>
 
 <ul>
-<li>Shading       : Fresnel, Beer's law</li>
-<li>Anti-aliasing : Adaptive SS, Jittering</li>
+<li>Shading       : <em>Fresnel, Beer's law</em>
+</li>
+<li>Anti-aliasing : <em>Adaptive SS, Jittering</em>
+</li>
 </ul><h2>Compilation / Installation</h2>
 
-<p>The source code is distributed along with a makefile configuration script for unix based
-systems with a GNU toolchain installed. To view all the available configuration options
-type: ./configure --help. Once the configuration is done, you can build the binary by 
-typing: make. To install the binary in your system type: make install. To uninstall 
-type: make uninstall</p>
+<p>The source code is distributed along with a makefile configuration script for unix based systems with a GNU toolchain installed. To view all the available configuration options type: ./configure --help. Once the configuration is done, you can build the binary by typing: make. To install the binary in your system type: make install. To uninstall type: make uninstall</p>
 
 <p>For windows users, a visual studio 2010 solution is available in the ide directory.</p>
 
 <h2>Dependencies</h2>
 
-<ul>
-<li>openmp    Must be provided by your compiler.</li>
-<li>libnmath  <a href="https://github.com/4rknova/libnmath">https://github.com/4rknova/libnmath</a>
-</li>
-<li>libnmesh  <a href="https://github.com/4rknova/libnmesh">https://github.com/4rknova/libnmesh</a>
-</li>
-<li>linimg    <a href="https://github.com/4rknova/libnimg">https://github.com/4rknova/libnimg</a>
-</li>
-<li>libncf    <a href="https://github.com/4rknova/libncf">https://github.com/4rknova/libncf</a>
-</li>
-</ul><h2>Supported platforms</h2>
+<pre><code>openmp   : Must be provided by your compiler.
+libnmath : https://github.com/4rknova/libnmath
+libnmesh : https://github.com/4rknova/libnmesh
+linimg   : https://github.com/4rknova/libnimg
+libncf   : https://github.com/4rknova/libncf
+</code></pre>
+
+<h2>Supported platforms</h2>
 
 <p>xtracer should be able to compile and run on any system equipped with openmp compatible
 c and c++ compilers. It has been tested without any problems under the following platforms:</p>
