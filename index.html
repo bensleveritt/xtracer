@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Xtracer by 4rknova</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Xtracer</h1>
+        <h2>Raytracer</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/4rknova/xtracer/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/4rknova/xtracer/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/4rknova/xtracer" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>XTracer 2</p>
+
+<p>Copyright 2010 - 2012 (c) 
+Papadopoulos Nikos <a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a> </p>
+
+<p><img src="https://www.dropbox.com/s/uoz1wujkntuqb0a/gi_2.png" alt="Global illumination with photon mapping"><img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/NCfpJ57wQR/gi_1.png" alt="Global illumination with photon mapping"></p>
+
+<h2>About</h2>
+
+<p>XTracer is a raytracer written in c and c++. </p>
+
+<p>v0.7 served as my thesis project for the BSc of computer science at the University 
+of Piraeus. It was developed under the supervision of Prof. T. Panayiotopoulos as 
+part of the research work of the Knowledge Engineering Lab (KEL).</p>
+
+<p>v1.x is currently under development as part of my dissertation for the MSc of
+computer graphics programming at the University of Hull.</p>
+
+<h2>License</h2>
+
+<p>The source code is distributed under the LGPL license version 3 or later.</p>
+
+<h2>Version history</h2>
+
+<p>0.7     2866bf99ca04d84a85ab13b755ded7d42014bee7
+1.x     HEAD</p>
+
+<h2>Features</h2>
+
+<p>Implemented:</p>
+
+<ul>
+<li>Primitives    : Plane, Triangle, Sphere, Mesh</li>
+<li>Materials     : Lambert, Phong, Blinn-Phong</li>
+<li>Lights        : Point, Sphere, Box, Triangle</li>
+<li>Cameras       : Pinhole, Thin lense</li>
+<li>Shading       : Reflection (glossy &amp; perfect mirror), Refraction,
+              Depth of field, Soft shadows, Texture mapping</li>
+<li>Acceleration  : Threads, Octrees, KD-trees</li>
+<li>Anti-aliasing : Supersampling</li>
+<li>Rendering     : HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)</li>
+</ul><p>Future expansion:</p>
+
+<ul>
+<li>Shading       : Fresnel, Beer's law</li>
+<li>Anti-aliasing : Adaptive SS, Jittering</li>
+</ul><h2>Compilation / Installation</h2>
+
+<p>The source code is distributed along with a makefile configuration script for unix based
+systems with a GNU toolchain installed. To view all the available configuration options
+type: ./configure --help. Once the configuration is done, you can build the binary by 
+typing: make. To install the binary in your system type: make install. To uninstall 
+type: make uninstall</p>
+
+<p>For windows users, a visual studio 2010 solution is available in the ide directory.</p>
+
+<h2>Dependencies</h2>
+
+<ul>
+<li>openmp    Must be provided by your compiler.</li>
+<li>libnmath  <a href="https://github.com/4rknova/libnmath">https://github.com/4rknova/libnmath</a>
+</li>
+<li>libnmesh  <a href="https://github.com/4rknova/libnmesh">https://github.com/4rknova/libnmesh</a>
+</li>
+<li>linimg    <a href="https://github.com/4rknova/libnimg">https://github.com/4rknova/libnimg</a>
+</li>
+<li>libncf    <a href="https://github.com/4rknova/libncf">https://github.com/4rknova/libncf</a>
+</li>
+</ul><h2>Supported platforms</h2>
+
+<p>xtracer should be able to compile and run on any system equipped with openmp compatible
+c and c++ compilers. It has been tested without any problems under the following platforms:</p>
+
+<ul>
+<li>Linux<br>
+</li>
+<li>FreeBSD</li>
+<li>MacOSX</li>
+<li>MS Windows XP, 7</li>
+</ul><h2>Contributions</h2>
+
+<p>I would like to thank the following people for their help and support.</p>
+
+<p>version 0.x</p>
+
+<pre><code>Prof. T. Panayiotopoulos : Supervising professor at University of Piraeus.
+Tsiombikas John          : Technical advisory.
+Stea Maria Elenh         : Technical advisory.
+Hardalias Apostolhs      : Windows testing, cpu time donation.
+Kokkalis Nikos           : FreeBSD testing.
+Ntzoufras Kwstas         : MacOSX testing, cpu time donation.
+Potamianos Grhgorhs      : cpu time donation.
+Costas Droggos           : cpu time donation.
+Kouzouphs Antwnhs        : cpu time donation.
+</code></pre>
+
+<p>version 1.x</p>
+
+<pre><code>Dr Qingde Li             : Supervising professor at University of Hull
+Tsiombikas John          : Technical advisory.
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
