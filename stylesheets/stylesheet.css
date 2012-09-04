@@ -23,6 +23,10 @@ section {
 
 p {
 	display: block;
+}
+
+p.wall
+{
 	text-align:justify;
 	text-justify:inter-word;
 }
