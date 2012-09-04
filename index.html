@@ -49,31 +49,34 @@ Papadopoulos Nikos <a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a> </
 
 <h2>Version history</h2>
 
-<ul>
-<li>0.7   : 2866bf99ca04d84a85ab13b755ded7d42014bee7</li>
-<li>1.x   : HEAD</li>
-</ul><h2>Features</h2>
+<pre><code>
+0.7   : 2866bf99ca04d84a85ab13b755ded7d42014bee7
+1.x   : HEAD
+</code></pre>
+
+<h2>Features</h2>
 
 <p><strong>Implemented:</strong></p>
 
 <pre><code>
-Primitives : <em>Plane, Triangle, Sphere, Mesh</em>
-Materials  : <em>Lambert, Phong, Blinn-Phong</em>
-Lights     : <em>Point, Sphere, Box, Triangle</em>
-Cameras    : <em>Pinhole, Thin lense</em>
-Shading    : <em>Reflection (glossy &amp; perfect mirror), Refraction, Depth of field, Soft shadows, Texture mapping</em>
-Acceleration  : <em>Threads, Octrees, KD-trees</em>
-Anti-aliasing : <em>Supersampling</em>
-Rendering     : <em>HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)</em>
+Primitives    : Plane, Triangle, Sphere, Mesh
+Materials     : Lambert, Phong, Blinn-Phong
+Lights        : Point, Sphere, Box, Triangle
+Cameras       : Pinhole, Thin lense
+Shading       : Reflection, Refraction, DoF, Soft shadows, Texture mapping
+Acceleration  : Threads, Octrees, KD-trees
+Anti-aliasing : Supersampling
+Rendering     : HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)
 </code></pre>
 
 <p><strong>Future expansion:</strong></p>
 
-<ul>
-<li>Shading       : <em>Fresnel, Beer's law</em></li>
-<li>Anti-aliasing : <em>Adaptive SS, Jittering</em></li>
+<code><pre>
+Shading       : Fresnel, Beer's law
+Anti-aliasing : Adaptive SS, Jittering
+</code></pre>
 
-</ul><h2>Compilation / Installation</h2>
+<h2>Compilation / Installation</h2>
 
 <p>The source code is distributed along with a makefile configuration script for unix based systems with a GNU toolchain installed. To view all the available configuration options type: ./configure --help. Once the configuration is done, you can build the binary by typing: make. To install the binary in your system type: make install. To uninstall type: make uninstall</p>
 <p>For windows users, a visual studio 2010 solution is available in the ide directory.</p>
