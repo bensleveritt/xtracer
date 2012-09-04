@@ -56,39 +56,33 @@ Papadopoulos Nikos <a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a> </
 
 <p><strong>Implemented:</strong></p>
 
-<ul>
-<li>Primitives : <em>Plane, Triangle, Sphere, Mesh</em>
-</li>
-<li>Materials  : <em>Lambert, Phong, Blinn-Phong</em>
-</li>
-<li>Lights     : <em>Point, Sphere, Box, Triangle</em>
-</li>
-<li>Cameras    : <em>Pinhole, Thin lense</em>
-</li>
-<li>Shading    : <em>Reflection (glossy &amp; perfect mirror), Refraction, Depth of field, Soft shadows, Texture mapping</em>
-</li>
-<li>Acceleration  : <em>Threads, Octrees, KD-trees</em>
-</li>
-<li>Anti-aliasing : <em>Supersampling</em>
-</li>
-<li>Rendering     : <em>HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)</em>
-</li>
-</ul><p><strong>Future expansion:</strong></p>
+<code>
+Primitives : <em>Plane, Triangle, Sphere, Mesh</em>
+Materials  : <em>Lambert, Phong, Blinn-Phong</em>
+Lights     : <em>Point, Sphere, Box, Triangle</em>
+Cameras    : <em>Pinhole, Thin lense</em>
+Shading    : <em>Reflection (glossy &amp; perfect mirror), Refraction, Depth of field, Soft shadows, Texture mapping</em>
+Acceleration  : <em>Threads, Octrees, KD-trees</em>
+Anti-aliasing : <em>Supersampling</em>
+Rendering     : <em>HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)</em>
+</code>
+
+<p><strong>Future expansion:</strong></p>
 
 <ul>
-<li>Shading       : <em>Fresnel, Beer's law</em>
-</li>
-<li>Anti-aliasing : <em>Adaptive SS, Jittering</em>
-</li>
+<li>Shading       : <em>Fresnel, Beer's law</em></li>
+<li>Anti-aliasing : <em>Adaptive SS, Jittering</em></li>
+
 </ul><h2>Compilation / Installation</h2>
 
 <p>The source code is distributed along with a makefile configuration script for unix based systems with a GNU toolchain installed. To view all the available configuration options type: ./configure --help. Once the configuration is done, you can build the binary by typing: make. To install the binary in your system type: make install. To uninstall type: make uninstall</p>
-
 <p>For windows users, a visual studio 2010 solution is available in the ide directory.</p>
 
 <h2>Dependencies</h2>
 
-<pre><code>openmp   : Must be provided by your compiler.
+<pre>
+<code>
+openmp   : Must be provided by your compiler.
 libnmath : https://github.com/4rknova/libnmath
 libnmesh : https://github.com/4rknova/libnmesh
 linimg   : https://github.com/4rknova/libnimg
@@ -112,7 +106,8 @@ c and c++ compilers. It has been tested without any problems under the following
 
 <p>version 0.x</p>
 
-<pre><code>Prof. T. Panayiotopoulos : Supervising professor, University of Piraeus.
+<pre><code>
+Prof. T. Panayiotopoulos : Supervising professor, University of Piraeus.
 Tsiombikas John          : Technical advisory.
 Stea Maria Elenh         : Technical advisory.
 Hardalias Apostolhs      : Windows testing, cpu time donation.
@@ -125,12 +120,12 @@ Kouzouphs Antwnhs        : cpu time donation.
 
 <p>version 1.x</p>
 
-<pre><code>Dr Qingde Li             : Supervising professor, University of Hull
+<pre><code>
+Dr Qingde Li             : Supervising professor, University of Hull
 Tsiombikas John          : Technical advisory.
 </code></pre>
+
       </section>
     </div>
-
-    
   </body>
 </html>
