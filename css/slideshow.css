@@ -1,0 +1,21 @@
+#slideshow
+{
+	position	: relative;
+	width		: 800px;
+	height		: 400px;
+}
+
+#slideshow div
+{
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	margin		: 0;
+}
+
+#preload
+{
+	background-color	: #000;
+	background			: url("../image/load-indicator.gif") no-repeat center center;
+	width				: 100%;
+}

@@ -1,74 +1,121 @@
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<html>
+<head>
+	<meta charset='utf-8'>
+  
+	<title>XTracer 2 by 4rknova</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css" media="screen" />
 
-    <title>XTracer 2 by 4rknova</title>
-  </head>
+	<script type="text/javascript" src="script/jquery-1.7.x.min.js"></script>
+	<script>
+		$(function() {
+			$("#slideshow > div:gt(0)").hide();
+				setInterval(function() { 
+					$('#slideshow > div:first')
+					.fadeOut(1000)
+					.next()
+					.fadeIn(1000)
+					.end()
+					.appendTo('#slideshow');
+				},  3000);
+			}
+		);
+	</script>
+</head>
 
-  <body>
+<body>
+<div class="container">
 
-    <header>
-      <div class="container">
-        <h1>XTracer 2</h1>
-        <h2>Global Illumination renderer</h2>
+	<h1>XTracer 2</h1>
+	<h2>Global Illumination renderer</h2>
+        
+	<a href="https://github.com/4rknova/xtracer/zipball/master" class="btn">Download as .zip</a>
+	<a href="https://github.com/4rknova/xtracer/tarball/master" class="btn">Download as .tar.gz</a>
+	<a href="https://github.com/4rknova/xtracer" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
 
-        <section id="downloads">
-          <a href="https://github.com/4rknova/xtracer/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/4rknova/xtracer/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/4rknova/xtracer" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
 
-    <div class="container">
-      <section id="main_content">
-        <p>XTracer 2</p>
+	<h2>About</h2>
+	<p>Copyright 2010 - 2012 (c) Papadopoulos Nikos [<a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a>]</p>
 
-<p>Copyright 2010 - 2012 (c) 
-Papadopoulos Nikos <a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a> </p>
 
-<h2>About</h2>
+	<p>XTracer is a global illumination renderer written in c and c++. </p>
 
-<p>XTracer is a global illumination renderer written in c and c++. </p>
+	<p class="wall">v0.7 served as my thesis project for the BSc of computer
+	science at the University of Piraeus. It was developed under the supervision
+	of Prof. T. Panayiotopoulos as part of the research work of the Knowledge
+	Engineering Lab (KEL). v1.1 wasr developed as part of my dissertation for 
+	the MSc of computer graphics programming at the University of Hull.</p>
 
-<p class="wall">v0.7 served as my thesis project for the BSc of computer science at the University of Piraeus. It was developed under the supervision of Prof. T. Panayiotopoulos as part of the research work of the Knowledge Engineering Lab (KEL).</p>
-<p class="wall">v1.1 is currently under development as part of my dissertation for the MSc of computer graphics programming at the University of Hull.</p>
+	<h2>Samples</h2>
 
-<h2>Samples</h2>
+	<div id="slideshow">
+		<div>
+			<a href="https://dl.dropbox.com/sh/zedf5uu08it1vgj/_APo0LWz2q/gi_5.png">
+				<img id="preload" 
+					src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/_APo0LWz2q/gi_5.png"
+					alt="Global illumination with photon mapping"/>
+			</a>
+		</div>
+	
+		<div>
+			<a href="https://dl.dropbox.com/sh/zedf5uu08it1vgj/1NZb3sUPfm/gi_4.png">
+				<img id="preload" 
+					src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/1NZb3sUPfm/gi_4.png"
+					alt="Global illumination with photon mapping"/>
+			</a>
+		</div>
 
-<p>
-<div align=center>
-<iframe width="640" height="360" src="http://www.youtube.com/embed/5ah7nPn1GgE?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-<iframe width="640" height="360" src="http://www.youtube.com/embed/yGa2-lwSyGA?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-</div>
-<img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/_APo0LWz2q/gi_5.png" alt="Global illumination with photon mapping">
-<img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/1NZb3sUPfm/gi_4.png" alt="Global illumination with photon mapping">
-<img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/yODWVwJ5J4/gi_3.png" alt="Global illumination with photon mapping">
-<img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/EHfDQOwPme/gi_2.png" alt="Global illumination with photon mapping">
-<img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/NCfpJ57wQR/gi_1.png" alt="Global illumination with photon mapping">
-<img src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/hqPfqhDyOu/stanford.png" alt="Renders of Stanford models">
-</p>
+		<div>
+			<a href="https://dl.dropbox.com/sh/zedf5uu08it1vgj/yODWVwJ5J4/gi_3.png">
+				<img id="preload" 
+					src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/yODWVwJ5J4/gi_3.png"
+					alt="Global illumination with photon mapping"/>
+			</a>
+		</div>
 
-<h2>License</h2>
+		<div>
+			<a href="https://dl.dropbox.com/sh/zedf5uu08it1vgj/EHfDQOwPme/gi_2.png">
+				<img id="preload" 
+					src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/EHfDQOwPme/gi_2.png"
+					alt="Global illumination with photon mapping"/>
+			</a>
+		</div>
 
-<p class="wall">The source code is distributed under the LGPL license version 3 or later.</p>
+		<div>
+			<a href="https://dl.dropbox.com/sh/zedf5uu08it1vgj/NCfpJ57wQR/gi_1.png">
+				<img id="preload" 
+					src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/NCfpJ57wQR/gi_1.png" 
+					alt="Global illumination with photon mapping"/>
+			</a>
+		</div>
 
-<h2>Version history</h2>
+		<div>
+			<a href="https://dl.dropbox.com/sh/zedf5uu08it1vgj/hqPfqhDyOu/stanford.png">
+				<img id="preload"
+					src="https://dl.dropbox.com/sh/zedf5uu08it1vgj/hqPfqhDyOu/stanford.png"
+					alt="Renders of Stanford models"/>
+			</a>
+		</div>
+	</div>
 
-<pre><code>
+
+	<h2>License</h2>
+
+	<p class="wall">The source code is distributed under the LGPL license version 3 or later.</p>
+
+	<h2>Version history</h2>
+
+	<pre><code>
 0.7   : 2866bf99ca04d84a85ab13b755ded7d42014bee7
 1.x   : HEAD
-</code></pre>
+	</code></pre>
 
-<h2>Features</h2>
+	<h2>Features</h2>
 
-<p><strong>Implemented:</strong></p>
+	<p><strong>Implemented:</strong></p>
 
-<pre><code>
+	<pre><code>
 Primitives    : Plane, Triangle, Sphere, Mesh
 Materials     : Lambert, Phong, Blinn-Phong
 Lights        : Point, Sphere, Box, Triangle
@@ -77,49 +124,55 @@ Shading       : Reflection, Refraction, DoF, Soft shadows, Texture mapping
 Acceleration  : Threads, Octrees, KD-trees
 Anti-aliasing : Supersampling
 Rendering     : HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)
-</code></pre>
+	</code></pre>
 
-<p><strong>Future expansion:</strong></p>
+	<p><strong>Future expansion:</strong></p>
 
-<code><pre>
+	<pre><code>
 Shading       : Fresnel, Beer's law
 Anti-aliasing : Adaptive SS, Jittering
-</code></pre>
+	</code></pre>
 
-<h2>Compilation / Installation</h2>
+	<h2>Compilation / Installation</h2>
 
-<p class="wall">The source code is distributed along with a makefile configuration script for unix based systems with a GNU toolchain installed. To view all the available configuration options type: ./configure --help. Once the configuration is done, you can build the binary by typing: make. To install the binary in your system type: make install. To uninstall type: make uninstall</p>
-<p class="wall">For windows users, a visual studio 2010 solution is available in the ide directory.</p>
+	<p class="wall">The source code is distributed along with a makefile
+	configuration script for unix based systems with a GNU toolchain installed. To
+	view all the available configuration options type: ./configure --help. Once the
+	configuration is done, you can build the binary by typing: make. To install the
+	binary in your system type: make install. To uninstall type: make uninstall. For
+	windows users, a visual studio 2010 solution is available in the ide
+	directory.</p>
 
-<h2>Dependencies</h2>
+	<h2>Dependencies</h2>
 
-<pre>
-<code>
+	<pre><code>
 openmp   : Must be provided by your compiler.
 libnmath : https://github.com/4rknova/libnmath
 libnmesh : https://github.com/4rknova/libnmesh
 linimg   : https://github.com/4rknova/libnimg
 libncf   : https://github.com/4rknova/libncf
-</code></pre>
+	</code></pre>
 
-<h2>Supported platforms</h2>
+	<h2>Supported platforms</h2>
 
-<p class="wall">xtracer should be able to compile and run on any system equipped with openmp compatible
-c and c++ compilers. It has been tested without any problems under the following platforms:</p>
+	<p class="wall">xtracer should be able to compile and run on any system equipped
+	with openmp compatible c and c++ compilers. It has been tested without any
+	problems under the following platforms:</p>
 
-<ul>
-<li>Linux<br>
-</li>
-<li>FreeBSD</li>
-<li>MacOSX</li>
-<li>MS Windows XP, 7</li>
-</ul><h2>Contributions</h2>
+	<ul>
+		<li>Linux</li>
+		<li>FreeBSD</li>
+		<li>MacOSX</li>
+		<li>MS Windows XP, 7</li>
+	</ul>
+	
+	<h2>Contributions</h2>
 
-<p>I would like to thank the following people for their help and support.</p>
+	<p>I would like to thank the following people for their help and support.</p>
 
-<p>version 0.x</p>
+	<p>version 0.x</p>
 
-<pre><code>
+	<pre><code>
 Prof. T. Panayiotopoulos : Supervising professor, University of Piraeus.
 Tsiombikas John          : Technical advisory.
 Stea Maria Elenh         : Technical advisory.
@@ -129,16 +182,15 @@ Ntzoufras Kwstas         : MacOSX testing, cpu time donation.
 Potamianos Grhgorhs      : cpu time donation.
 Costas Droggos           : cpu time donation.
 Kouzouphs Antwnhs        : cpu time donation.
-</code></pre>
+	</code></pre>
 
-<p>version 1.x</p>
+	<p>version 1.x</p>
 
-<pre><code>
+	<pre><code>
 Dr Qingde Li             : Supervising professor, University of Hull
 Tsiombikas John          : Technical advisory.
-</code></pre>
-
-      </section>
-    </div>
-  </body>
+	</code></pre>
+	
+</div>
+</body>
 </html>
