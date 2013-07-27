@@ -36,16 +36,26 @@
 
 
 	<h2>About</h2>
-	<p>Copyright 2011 -2013 by Papadopoulos Nikos [<a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a>]</p>
+	<p>Copyright 2011 - 2013 by Papadopoulos Nikos [<a href="mailto:nikpapas@gmail.com">nikpapas@gmail.com</a>]</p>
 
 
 	<p>XTracer is a global illumination renderer written in c and c++. </p>
 
-	<p class="wall">Version 0.7 consisted of a basic raytracer with rundimentary 
-	functionality along with a simple parser for scene scripts and served as my 
-	thesis project for the B.Sc. of computer science at the University of Piraeus. 
-	Version	1.1 was developed as part of my dissertation for the MSc of computer
-	graphics programming at the University of Hull.</p>
+	<p class="wall">
+		v0.7 served as my thesis project for the BSc of computer science at the
+		University of Piraeus. It was developed under the supervision of Prof. T.
+		Panayiotopoulos as part of the research work of the Knowledge Engineering Lab.
+	</p>
+
+	<p class="wall">
+		v1.1 was developed as part of my dissertation for the MSc of computer graphics 
+		programming at the University of Hull.
+	</p>
+
+
+	<p class="wall">
+		v1.2 is the current version. All external dependencies have be integrated.
+	</p>
 
 	<h2>Samples</h2>
 
@@ -120,7 +130,7 @@ Primitives    : Plane, Triangle, Sphere, Mesh
 Materials     : Lambert, Phong, Blinn-Phong
 Lights        : Point, Sphere, Box, Triangle
 Cameras       : Pinhole, Thin lense
-Shading       : Reflection, Refraction, DoF, Soft shadows, Texture mapping
+Shading       : Reflection, Refraction, DoF, Soft shadows, Texture mapping, Frasnel
 Acceleration  : Threads, Octrees, KD-trees
 Anti-aliasing : Supersampling
 Rendering     : HDR, Whitted/Distributed raytracing, Photon mapping (diffuse term)
@@ -129,7 +139,7 @@ Rendering     : HDR, Whitted/Distributed raytracing, Photon mapping (diffuse ter
 	<p><strong>Future expansion:</strong></p>
 
 	<pre><code>
-Shading       : Fresnel, Beer's law
+Shading       : Beer's law
 Anti-aliasing : Adaptive SS, Jittering
 	</code></pre>
 
@@ -139,18 +149,22 @@ Anti-aliasing : Adaptive SS, Jittering
 	configuration script for unix based systems with a GNU toolchain installed. To
 	view all the available configuration options type: ./configure --help. Once the
 	configuration is done, you can build the binary by typing: make. To install the
-	binary in your system type: make install. To uninstall type: make uninstall. For
-	windows users, a visual studio 2010 solution is available in the ide
-	directory.</p>
+	binary in your system type: make install. To uninstall type: make uninstall.
+	</p>
 
 	<h2>Dependencies</h2>
-
 	<pre><code>
-openmp   : Must be provided by your compiler.
-libnmath : https://github.com/4rknova/libnmath
-libnmesh : https://github.com/4rknova/libnmesh
-linimg   : https://github.com/4rknova/libnimg
-libncf   : https://github.com/4rknova/libncf
+	Version:  0.x - 1.1.2.0
+	openmp   : Must be provided by your compiler.
+	libnmath : https://github.com/4rknova/libnmath
+	libnmesh : https://github.com/4rknova/libnmesh
+	linimg   : https://github.com/4rknova/libnimg
+	libncf   : https://github.com/4rknova/libncf
+
+	NOTE: You might need older versions of the libraries.
+
+	Version: 1.2.0.0
+	openmp   : Must be provided by your compiler.
 	</code></pre>
 
 	<h2>Supported platforms</h2>
